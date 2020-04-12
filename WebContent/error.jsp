@@ -212,11 +212,13 @@ color: #FFFFFF;
 
 	  </br>
 	  </br>
-	  <p><strong>You're logged out.</strong></p>
+	  <p><strong>You don't have permission to access this page</strong></p>
+	  </br>
+	  <p><small>Please contact your administrator for access.</small></p>
 	  
 	  </br>
 	  </br>
-	  <a href="login.jsp"> Log in </a>
+	  <a href="login.jsp"> Go back </a>
 
     </form>
   </div> 

@@ -27,7 +27,7 @@ public class Login extends HttpServlet {
             response.sendRedirect("sonar-pm/dashboard.jsp");
             return;
         } else {
-            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
             request.getSession().setAttribute("auth", "false");
             rd.include(request, response);
         }

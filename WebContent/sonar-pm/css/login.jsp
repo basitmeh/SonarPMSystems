@@ -29,13 +29,7 @@
 
       <h1>Welcome</h1>
 	  <p>Enter your credentials for access</p>
-      <div class="formcontainer">
-      <%! String s1 = ""; %>
-      
-      <% s1  = (String) session.getAttribute("auth");%>
-      <% if(s1 != null && s1.equals("false")){ %>
-      	<p><font color=red>Either user name or password is wrong.</font></p>
-      <%} %>
+      <div class="formcontainer" "style=width: 617.58px;">
       <div class="container">
         <label for="uname"><strong>Username:</strong></label>
         <input type="text" placeholder=" " name="uname" required><br>

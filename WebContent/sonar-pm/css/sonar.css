@@ -7,15 +7,16 @@
 	width: 30px;
 	height: 3px;
 	margin: 2px 0;
-	
+
 	background: #878C90;
 }
 
 .menu-icon-adjustment {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 50px;
-  margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	margin-left: 20px;
+	display: none;
 }
 
 .top-bar {
@@ -24,15 +25,15 @@
 	right: 0%;
 	top: 0%;
 	bottom: 0px;
-	
-	background: linear-gradient(180deg, #B5B7C7 41.33%, #FFFDFD 100%);
-	border: 2px solid #A2ABB2;
+
+	background: linear-gradient(180deg, #EFF3F5 41.33%, #FFFDFD 100%);
+	border: 2px solid #EFF3F5;
 	box-sizing: border-box;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 	border-radius: 1px;
 	overflow: hidden;
-	
-	display: flex;
+
+	display: none;
 }
 
 .top-bar-text {
@@ -40,13 +41,13 @@
 	font-size: 16px;
 	line-height: 19px;
 	/* identical to box height */
-	
+
 	letter-spacing: 0.2px;
-	
+
 	color: #454545;
-    display: flex;
-    justify-content: center;
-    
+	display: flex;
+	justify-content: center;
+
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 150px;
@@ -63,54 +64,56 @@
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	
+
 	margin-bottom: 10px;
+	position: relative;
 
 }
 
 .navigation-container img{
-float:left;
+	float:left;
 	margin-top: 5%;
 	margin-bottom: 0px;
 	margin-right: 0%;
-	margin-left: 4%; 
+	margin-left: 4%;
+	z-index: 1;
 }
 
 .navigation-container h4 {
-	float:right;
+	z-index: 1;
+	float: right;
 	margin-top: 5%;
 	margin-bottom: 0px;
 	margin-right: 0%;
-	margin-left: 0%; 
-	
+	margin-left: 0%;
 	height: 23px;
-	left: 77.31%;
-	right: 0.09%;
-	top: calc(50% - 23px/2 - 2.5px);
-	
+	right: 27px;
+	top: 23px;
 	font-family: Consolas;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 23px;
-	
-	color: #272A41;	
+	color: #272A41;
+	position: absolute;
+
+	color: #272A41;
 }
 
 .navigation-container h4 form a input{
 	float:right;
 
-	
+
 	font-family: Consolas;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
 	/* identical to box height */
-	
+
 	text-align: right;
 	letter-spacing: 0.226667px;
-	
+
 	color: #008EDC;
 	background: #EFF3F5;
 	border: 0;
@@ -124,18 +127,18 @@ float:left;
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
-	
+
 	position: absolute;
-  	left: 20px;	
-  	overflow: hidden;
+	left: 20px;
+	overflow: hidden;
 }
 
 #tab-button {
 	display: table;
 	table-layout: fixed;
-	width: 40%;
+	width: 52%;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 61px;
 	list-style: none;
 }
 
@@ -148,45 +151,72 @@ float:left;
 	display: block;
 	padding: .5em;
 	background: #eee;
-	border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
 	text-align: center;
 	color: #000;
 	text-decoration: none;
-	
-left: 5.72%;
-right: 81.4%;
-top: 0%;
-bottom: 66.67%;
+
+	left: 5.72%;
+	right: 81.4%;
+	top: 0%;
+	bottom: 66.67%;
 
 
-border: 1px solid #446BA6;
-box-sizing: border-box;
-border-radius: 12px 12px 0px 0px;	
-	
+	border: 1px solid #446BA6;
+	box-sizing: border-box;
+	border-radius: 12px 12px 0px 0px;
+
 }
 
 #tab-button li:not (:first-child ) a {
 	border-left: none;
 }
 
-#tab-button li , #tab-button .is-active a {
+#tab-button li  {
 	border-bottom-color: transparent;
-	background: linear-gradient(180deg, #FFFFFF 0%, #6686B6 39.16%, #446BA6 80.93%);
+	background: linear-gradient(180deg, #EFF3F5 0%, #EFF3F5 39.16%, #EFF3F5 80.93%);
+}
+
+#tab-button .is-active a {
+	border-bottom-color: #587BAF;
+	background: linear-gradient(180deg, #FFFFFF 0%, #6686B6 29.16%, #446BA6 125.93%);
+	color: white;
 }
 
 .tab-contents {
-   max-width: 100%;
-   max-height: 100%;
-   display: block;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	padding-bottom: 35px;
 }
 
 .tab-contents img{
-  width: 100%;
-  height: 40%;
+	width: 100%;
+	height: 40%;
 }
 
 .tab-button-outer {
 	display: none;
+}
+
+.section-header{
+	background-color: #587BAF;
+	color: #FFFFFFFF;
+	font-size: 41px;
+	font-weight: bold;
+	padding: 12px 67px;
+	top: 0;
+	font-family: consolas;
+}
+
+.copyrights-section{
+	color: #323131;
+	font-family: Consolas;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 12px;
+	padding-bottom: 20px;
 }
 
 
@@ -205,3 +235,6 @@ border-radius: 12px 12px 0px 0px;
 		margin-top: 0;
 	}
 }
+
+
+

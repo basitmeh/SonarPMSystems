@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Inconsolata;
+	src: url(Inconsolata-Bold.ttf);
+}
+
+@font-face {
+	font-family: InconsolataRegular;
+	src: url(Inconsolata-Regular.ttf);
+}
+
 .logo-img{
     width: 326px;
     height: 59px;
@@ -114,7 +124,7 @@ button {
     box-sizing: border-box;
     border-radius: 2px;
 
-    font-family: Consolas;
+    font-family: Inconsolata;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -128,7 +138,7 @@ button {
 }
 
 strong{
-    font-family: Consolas;
+    font-family: Inconsolata;
 }
 h1 {
     text-align:center;
@@ -140,7 +150,7 @@ h1 {
 p {
     text-align: center;
     font-size: 10;
-    font-family: Consolas;
+    font-family: Inconsolata;
 )
 
 button:hover {
@@ -169,7 +179,7 @@ span.psw {
     padding: 30px;
     padding-left: 50px;
 
-    font-family: Consolas;
+    font-family: Inconsolata;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

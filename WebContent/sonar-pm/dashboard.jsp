@@ -74,7 +74,6 @@
 	<%
 	    Cookie[] cks = request.getCookies();
 	    if (cks != null) {
-	        System.out.println("Finding the cookies " + cks);
 	        for (int i = 0; i < cks.length; i++) {
 	            String name = cks[i].getName();
 	            String value = cks[i].getValue();

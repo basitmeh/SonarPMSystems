@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Inconsolata;
+	src: url(Inconsolata-Bold.ttf);
+}
+
+@font-face {
+	font-family: InconsolataRegular;
+	src: url(Inconsolata-Regular.ttf);
+}
+
 .body-dashboad {
 	background: #EFF3F5;
 }
@@ -89,7 +99,7 @@
 	height: 23px;
 	right: 27px;
 	top: 23px;
-	font-family: Consolas;
+	font-family: Inconsolata;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 20px;
@@ -104,7 +114,7 @@
 	float:right;
 
 
-	font-family: Consolas;
+	font-family: Inconsolata;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -211,7 +221,7 @@
 
 .copyrights-section{
 	color: #323131;
-	font-family: Consolas;
+	font-family: Inconsolata;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
